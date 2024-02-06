@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Focus Timer</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <div id="app">
         <button class="theme-changer">
             <span>Theme changer</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
         </button>
         <main>
             <div class="time-counter">
@@ -22,12 +25,12 @@
                 </span>
             </div>
             <div class="controls">
-                <button>play</button>
-                <button>pause</button>
-                <button>set</button>
-                <button>stop</button>
-                <button>musicon</button>
-                <button>musicoff</button>
+                <button class="ph ph-play-circle">play</button>
+                <button class="ph ph-pause-circle">pause</button>
+                <button class="ph ph-timer">set</button>
+                <button class="ph ph-stop-circle">stop</button>
+                <button class="ph ph-speaker-none">musicon</button>
+                <button class="ph ph-speaker-high">musicoff</button>
             </div>
         </main>
     </div>
