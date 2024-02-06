@@ -1,38 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="running music-on light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <div id="app">
         <button class="theme-changer">
-            <span>Theme changer</span>
+            <span class="sr-only">Enable/Disable Light Mode</span>
             <i class="ph-bold ph-sun"></i>
             <i class="ph-bold ph-moon"></i>
         </button>
-        <main>
-            <div class="time-counter">
-                <span class="minutes">
-                    00
+        <div class="time-counter flex">
+            <span class="minutes">
+                00
+            </span>
+            <span>:</span>
+            <span class="seconds">
+                00
+            </span>
+        </div>
+        <div class="controls flex">
+            <button class="ph ph-play-circle on">
+                <span class="sr-only">
+                    Start timer
                 </span>
-                <span>:</span>
-                <span class="seconds">
-                    00
+            </button>
+            <button class="ph ph-pause-circle on">
+                <span class="sr-only">
+                    Pause timer
                 </span>
-            </div>
-            <div class="controls">
-                <button class="ph ph-play-circle">play</button>
-                <button class="ph ph-pause-circle">pause</button>
-                <button class="ph ph-timer">set</button>
-                <button class="ph ph-stop-circle">stop</button>
-                <button class="ph ph-speaker-none">musicon</button>
-                <button class="ph ph-speaker-high">musicoff</button>
-            </div>
-        </main>
+            </button>
+            <button class="ph ph-timer">
+                <span class="sr-only">
+                    Adjust timer
+                </span>
+            </button>
+            <button class="ph ph-stop-circle">
+                <span class="sr-only">
+                    Restart timer
+                </span>
+            </button>
+            <button class="ph ph-speaker-none">
+                <span class="sr-only">
+                    Play music
+                </span>
+            </button>
+            <button class="ph ph-speaker-high on">
+                <span class="sr-only">
+                    Stop music
+                </span>
+            </button>
+        </div>
     </div>
 </body>
 </html>
